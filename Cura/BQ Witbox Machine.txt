@@ -1,18 +1,17 @@
-297x210x200
+Bed: 297x210x200
 
-20, 10; 10, 10
+X/Y-Min: 20, 10
+X/Y-Max: 10, 10
 
-Rect
+Bed shape: Rectangular
 
-Marlin
+GCODE Flavor: Marlin
 
-99999999999
+Gantry height: 99999999999 (almost certainly lazy and wrong)
 
-1.75
-0.4
+Filament size: 1.75mm
+Nozzle size: 0.4mm
 
-
-Before:
 
 ; -- START GCODE --
 G21                     ;set units to millimetres
@@ -26,8 +25,6 @@ G1 E20 F200             ;extrude 20mm of feed stock
 G92 E0                  ;zero the extruded length again
 G1 F7200                ;set feedrate to 120 mm/s
 ; -- end of START GCODE --
-
-End:
 
 ; -- END GCODE --
 M104 S0                 ;set extruder temperature to zero (turned off)
